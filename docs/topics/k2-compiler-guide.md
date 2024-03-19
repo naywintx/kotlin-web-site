@@ -35,9 +35,9 @@ data structure enables the K2 compiler to provide the following benefits:
 As a result, we've already made improvements to some [language features](#language-feature-improvements).
 
 This guide:
-* explains the benefits of the new K2 compiler
-* highlights changes you might encounter during migration and how to adapt your code accordingly
-* describes how you can roll back to the previous version
+* explains the benefits of the new K2 compiler.
+* highlights changes you might encounter during migration and how to adapt your code accordingly.
+* describes how you can roll back to the previous version.
 
 ## Language feature improvements
 
@@ -975,10 +975,10 @@ for further reading.
 | KT-55111 | OptIn: forbid constructor calls with default arguments under marker                                        |
 | KT-61182 | Unit conversion is accidentally allowed to be used for expressions on variables + invoke resolution        |
 | KT-55199 | Forbid promoting callable references with adaptations to KFunction                                         |
-| KT-65776 | [LC] K2 breaks \`false && ...\` and \`false                                                                || ...\`                                                       |
+| KT-65776 | [LC] K2 breaks \`false && ...\` and \`false \|\| ...\`                                                     |                                                      |
 | KT-65682 | [LC] Deprecate \`header\`/\`impl\` keywords                                                                |
 
-### Compatibility with Kotlin releases
+## Compatibility with Kotlin releases
 
 The following Kotlin releases have support for the new K2 compiler:
 
@@ -989,7 +989,7 @@ The following Kotlin releases have support for the new K2 compiler:
 | 1.9.0–1.9.10   | JVM is Beta     |
 | 1.7.0–1.8.22   | Alpha           |
 
-### Compiler plugins support
+## Compiler plugins support
 
 Currently, the Kotlin K2 compiler supports the following Kotlin compiler plugins:
 
@@ -1013,11 +1013,11 @@ In addition, the Kotlin K2 compiler supports:
 >
 {type="tip"}
 
-### Performance
+## Performance
 
 TBD
 
-### Leave your feedback on the new K2 compiler
+## Leave your feedback on the new K2 compiler
 
 We would appreciate any feedback you may have!
 
