@@ -16,7 +16,7 @@ Download and install one of these IDEs to start using Kotlin.
  
 <tabs>
 
-<tab id="console" title="Console app">
+<tab id="console" title="Console">
 
 Here you'll learn how to develop a console application and create unit tests with Kotlin.
 
@@ -38,7 +38,7 @@ If you encounter any difficulties or problems, report an issue in our [issue tra
 
 </tab>
 
-<tab id="backend" title="Backend app">
+<tab id="backend" title="Backend">
 
 Here you'll learn how to develop a backend application with Kotlin server-side.
 
@@ -62,7 +62,7 @@ If you encounter any difficulties or problems, report an issue in our [issue tra
 
 </tab>
 
-<tab id="cross-platform-mobile" title="Cross-platform app">
+<tab id="cross-platform-mobile" title="Cross-platform">
 
 Here you'll learn how to develop and improve your cross-platform application using [Kotlin Multiplatform](https://kotlinlang.org/lp/multiplatform/).
 
@@ -90,7 +90,7 @@ If you've encountered any difficulties or problems, report an issue to our [issu
 
 </tab>
 
-<tab id="android" title="Android app">
+<tab id="android" title="Android">
 
 * If you want to start using Kotlin for Android development, read [Google's recommendation for getting started with Kotlin on Android](https://developer.android.com/kotlin/get-started).
 
