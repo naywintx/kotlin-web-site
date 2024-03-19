@@ -98,7 +98,7 @@ fun main(){
     // Purr purr
 }
 ```
-{kotlin-runnable="true" kotlin-min-compiler-version="2.0" id="kotlin-smart-casts-k2-local-variables" validate="false"}
+{kotlin-runnable="true" kotlin-min-compiler-version="2.0" id="kotlin-smart-casts-k2-local-variables-guide" validate="false"}
 
 #### Type checks with logical `or` operator
 
@@ -267,7 +267,7 @@ fun main() {
     testString()
 }
 ```
-{kotlin-runnable="true" kotlin-min-compiler-version="2.0" id="kotlin-smart-casts-k2-exception-handling"}
+{kotlin-runnable="true" kotlin-min-compiler-version="2.0" id="kotlin-smart-casts-k2-exception-handling-guide"}
 
 #### Increment and decrement operators
 
@@ -316,7 +316,7 @@ fun main(input: Rho) {
     }
 }
 ```
-{kotlin-runnable="true" kotlin-min-compiler-version="2.0" id="kotlin-smart-casts-k2-increment-decrement-operators" validate="false"}
+{kotlin-runnable="true" kotlin-min-compiler-version="2.0" id="kotlin-smart-casts-k2-increment-decrement-operators-guide" validate="false"}
 
 ### Kotlin Multiplatform
 
@@ -543,7 +543,7 @@ This section highlights the following changes:
 
 #### Immediate initialization of open properties with backing fields
 
-##### What's changed?
+**What's changed?**
 
 In Kotlin 2.0, all `open` properties with backing fields must be immediately initialized, otherwise you'll get a compilation
 error. Previously, only `open var` properties needed to be initialized right away, now this extends to `open val`s with 
@@ -572,7 +572,7 @@ If the custom setter is presented, deferred initialization is confusing because 
 the backing field or to invoke the setter. In case you wanted to invoke the setter, the compiler couldn't guarantee that
 the setter would initialize the backing field.
 
-##### What's the best practice now?
+**What's the best practice now?**
 
 We encourage you to always initialize open properties with backing fields, as we believe it's a better, less error-prone
 code practice.
@@ -584,7 +584,7 @@ However, if you don't want to immediately initialize a property, you can:
 
 #### Deprecate use of a synthetic setter on a projected receiver
 
-##### What's changed?
+**What's changed?**
 
 If you use the synthetic setter of a Java class to assign a type that conflicts with the class's projected type, an error is triggered.
 
@@ -620,7 +620,7 @@ fun exampleFunction(firstContainer: Container<*>, secondContainer: Container<in 
 }
 ```
 
-##### What's the best practice now?
+**What's the best practice now?**
 
 If you see that this change introduces errors in your code, reconsider your type declarations. Either you don't need to 
 use type projections or you need to remove the assignment in your code.
@@ -629,7 +629,7 @@ For more information, see the [corresponding issue in YouTrack](https://youtrack
 
 #### Consistent resolution order of Kotlin properties and Java fields with the same name
 
-##### What's changed?
+**What's changed?**
 
 Before Kotlin 2.0.0, if you worked with Java and Kotlin classes that inherited from each other, and contained Kotlin 
 properties and Java fields with the same name, the resolution behavior of the duplicated name was inconsistent. There was
@@ -759,7 +759,7 @@ fun main() {
 </tr>
 </table>
 
-##### What's the best practice now?
+**What's the best practice now?**
 
 The resolution behavior was chosen to cause the least impact to users. Compiler warnings were introduced in Kotlin 1.8.20
 to warn about changes in resolution behavior in Kotlin 2.0.0.
@@ -768,7 +768,7 @@ For more information, see the [corresponding issue in YouTrack](https://youtrack
 
 #### Improved nullability safety for Java primitive arrays
 
-##### What's changed?
+**What's changed?**
 
 Starting with Kotlin 2.0.0, the compiler correctly infers nullability of the Java primitive arrays imported to Kotlin. 
 Now, it retains native nullability from the `TYPE_USE` annotations used with Java primitive arrays and emits errors when
@@ -805,7 +805,7 @@ dataService.fetchData()[0]
 ```
 Note that this issue never affected nullability annotations on the declaration itself, only the `TYPE_USE` ones.
 
-##### What's the best practice now?
+**What's the best practice now?**
 
 In Kotlin 2.0.0, the nullability safety of Java primitive arrays is now standard for Kotlin, so check your code for new 
 warnings and errors if you use them:
