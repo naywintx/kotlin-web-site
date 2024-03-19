@@ -822,6 +822,21 @@ For more information, see the [corresponding issue in YouTrack](https://youtrack
 These subject areas list changes that are unlikely to affect your code but provide links to the relevant YouTrack issues
 for further reading.
 
+Subject areas:
+* [Type inference](#type-inference)
+* [Generics](#generics)
+* [Resolution](#resolution)
+* [Visibility](#visibility)
+* [Annotations](#annotations)
+* [Null safety](#null-safety)
+* [Java interoperability](#java-interoperability)
+* [Properties](#properties)
+* [Control flow](#control-flow)
+* [Enum classes](#enum-classes)
+* [Functional (SAM) interfaces](#functional-sam-interfaces)
+* [Companion object](#companion-object)
+* [Miscellaneous](#miscellaneous)
+
 #### Type inference
 
 | Issue ID | Title                                                                                                      |
@@ -843,54 +858,6 @@ for further reading.
 | KT-65750 | Increment and plus operators that change return type must affect smart casts                               |
 | KT-65349 | [LC] K2: specifying variable types explicitly breaks bound smart casts in some cases that worked in K1     |
 
-#### Resolution
-
-| Issue ID | Title                                                                                                                         |
-|----------|-------------------------------------------------------------------------------------------------------------------------------|
-| KT-58260 | Make invoke convention works consistently with expected desugaring                                                            |
-| KT-62866 | K2: Change qualifier resolution behavior when companion object is preferred against static scope                              |
-| KT-57750 | Report ambiguity error when resolving types and having the same-named classes star imported                                   |
-| KT-63558 | K2: migrate resolution around COMPATIBILITY_WARNING                                                                           |
-| KT-51194 | False negative CONFLICTING_INHERITED_MEMBERS when dependency class contained in two different versions of the same dependency |
-| KT-37592 | Property invoke of a functional type with receiver is preferred over extension function invoke                                |
-| KT-51666 | Qualified this: introduce/prioritize this qualified with type case                                                            |
-| KT-54166 | Confirm unspecified behavior in case of FQ name conflicts in classpath                                                        |
-| KT-64431 | K2: forbid using typealiases as qualifier in imports                                                                          |
-| KT-56520 | K1/K2: incorrect work of resolve tower for type references with ambiguity at lower level                                      |
-
-#### Null safety
-
-| Issue ID | Title                                                                                       |
-|----------|---------------------------------------------------------------------------------------------|
-| KT-41034 | K2: Change evaluation semantics for combination of safe calls and convention operators      |
-| KT-50850 | Order of supertypes defines nullability parameters of inherited functions                   |
-| KT-53982 | Keep nullability when approximating local types in public signatures                        |
-| KT-62998 | Forbid assignment of a nullable to a not-null Java field as a selector of unsafe assignment |
-| KT-63209 | Report missing errors for error-level nullable arguments of warning-level Java types        |
-
-#### Properties
-
-| Issue ID | Title                                                                                                         |
-|----------|---------------------------------------------------------------------------------------------------------------|
-| KT-58589 | Deprecate missed MUST_BE_INITIALIZED when no primary constructor is presented or when class is local          |
-| KT-64295 | Forbid recursive resolve in case of potential invoke calls on properties                                      |
-| KT-57290 | Deprecate smart cast on base class property from invisible derived class if base class is from another module |
-| KT-62661 | K2: Missed OPT_IN_USAGE_ERROR for data class properties                                                       |
-
-#### Annotations
-
-| Issue ID | Title                                                                                                  |
-|----------|--------------------------------------------------------------------------------------------------------|
-| KT-58723 | Forbid annotating statements with an annotation if it has no EXPRESSION target                         |
-| KT-49930 | Ignore parentheses expression during \`REPEATED_ANNOTATION\` checking                                  |
-| KT-57422 | K2: Prohibit use-site 'get' targeted annotations on property getters                                   |
-| KT-46483 | Prohibit annotation on type parameter in where clause                                                  |
-| KT-64299 | Companion scope is ignored for resolution of annotations on companion object                           |
-| KT-64654 | K2: Introduced ambiguity between user and compiler-required annotations                                |
-| KT-64527 | Annotations on enum values shouldn't be copied to enum value classes                                   |
-| KT-63389 | K2: \`WRONG_ANNOTATION_TARGET\` is reported on incompatible annotations of a type wrapped into \`()?\` |
-| KT-63388 | K2: \`WRONG_ANNOTATION_TARGET\` is reported on catch parameter type's annotations                      |
-
 #### Generics
 
 | Issue ID | Title                                                                                                                                                 |
@@ -908,48 +875,20 @@ for further reading.
 | KT-64966 | Forbid generic delegating constructor calls with wrong type for generic parameter                                                                     |
 | KT-65712 | Report missing upper bound violation when upper bound is captured type                                                                                |
 
-#### Java interoperability
+#### Resolution
 
-| Issue ID | Title                                                                                                      |
-|----------|------------------------------------------------------------------------------------------------------------|
-| KT-53061 | Forbid Java and Kotlin classes with the same FQ name in sources                                            |
-| KT-49882 | Classes inherited from Java collections have inconsistent behavior depending on order of supertypes        |
-| KT-66324 | K2: unspecified behavior in case of Java class inheritance from a Kotlin private class                     |
-| KT-66220 | Passing java vararg method to inline function leads to array of arrays in runtime instead of just an array |
-| KT-66204 | Allow to override internal members in K-J-K hierarchy                                                      |
-
-#### Companion object
-
-| Issue ID | Title                                                                    |
-|----------|--------------------------------------------------------------------------|
-| KT-54316 | Out-of-call reference to companion object's member has invalid signature |
-| KT-47313 | Change (V)::foo reference resolution when V has a companion              |
-
-#### Control flow
-
-| Issue ID | Title                                                                                      |
-|----------|--------------------------------------------------------------------------------------------|
-| KT-56408 | Inconsistent rules of CFA in class initialization block between K1 and K2                  |
-| KT-57871 | K1/K2 inconsistency on if-conditional without else-branch in parenthesis                   |
-| KT-42995 | False negative "VAL_REASSIGNMENT" in try/catch block with initialization in scope function |
-| KT-65724 | Propagate data flow information from try block to catch and finally blocks                 |
-
-#### Functional (SAM) interfaces
-
-| Issue ID | Title                                                                                                           |
-|----------|-----------------------------------------------------------------------------------------------------------------|
-| KT-52628 | Deprecate SAM constructor usages which require OptIn without annotation                                         |
-| KT-57014 | Prohibit returning values with incorrect nullability from lambda for SAM constructor of JDK function interfaces |
-| KT-64342 | SAM conversion of parameter types of callable references leads to CCE                                           |
-
-#### Enum classes
-
-| Issue ID | Title                                                                                        |
-|----------|----------------------------------------------------------------------------------------------|
-| KT-57608 | Prohibit access to the companion object of enum class during initialization of enum entry    |
-| KT-34372 | Report missed error for virtual inline method in enum classes                                |
-| KT-52802 | Report ambiguity resolving between property/field and enum entry                             |
-| KT-47310 | Change qualifier resolution behavior when companion property is preferred against enum entry |
+| Issue ID | Title                                                                                                                         |
+|----------|-------------------------------------------------------------------------------------------------------------------------------|
+| KT-58260 | Make invoke convention works consistently with expected desugaring                                                            |
+| KT-62866 | K2: Change qualifier resolution behavior when companion object is preferred against static scope                              |
+| KT-57750 | Report ambiguity error when resolving types and having the same-named classes star imported                                   |
+| KT-63558 | K2: migrate resolution around COMPATIBILITY_WARNING                                                                           |
+| KT-51194 | False negative CONFLICTING_INHERITED_MEMBERS when dependency class contained in two different versions of the same dependency |
+| KT-37592 | Property invoke of a functional type with receiver is preferred over extension function invoke                                |
+| KT-51666 | Qualified this: introduce/prioritize this qualified with type case                                                            |
+| KT-54166 | Confirm unspecified behavior in case of FQ name conflicts in classpath                                                        |
+| KT-64431 | K2: forbid using typealiases as qualifier in imports                                                                          |
+| KT-56520 | K1/K2: incorrect work of resolve tower for type references with ambiguity at lower level                                      |
 
 #### Visibility
 
@@ -965,6 +904,82 @@ for further reading.
 | KT-65004 | K1: Setter of var, which overrides protected val, is generates as public                                                       |
 | KT-64972 | Forbid overriding by private members in link-time for Kotlin/Native                                                            |
 
+#### Annotations
+
+| Issue ID | Title                                                                                                  |
+|----------|--------------------------------------------------------------------------------------------------------|
+| KT-58723 | Forbid annotating statements with an annotation if it has no EXPRESSION target                         |
+| KT-49930 | Ignore parentheses expression during \`REPEATED_ANNOTATION\` checking                                  |
+| KT-57422 | K2: Prohibit use-site 'get' targeted annotations on property getters                                   |
+| KT-46483 | Prohibit annotation on type parameter in where clause                                                  |
+| KT-64299 | Companion scope is ignored for resolution of annotations on companion object                           |
+| KT-64654 | K2: Introduced ambiguity between user and compiler-required annotations                                |
+| KT-64527 | Annotations on enum values shouldn't be copied to enum value classes                                   |
+| KT-63389 | K2: \`WRONG_ANNOTATION_TARGET\` is reported on incompatible annotations of a type wrapped into \`()?\` |
+| KT-63388 | K2: \`WRONG_ANNOTATION_TARGET\` is reported on catch parameter type's annotations                      |
+
+#### Null safety
+
+| Issue ID | Title                                                                                       |
+|----------|---------------------------------------------------------------------------------------------|
+| KT-41034 | K2: Change evaluation semantics for combination of safe calls and convention operators      |
+| KT-50850 | Order of supertypes defines nullability parameters of inherited functions                   |
+| KT-53982 | Keep nullability when approximating local types in public signatures                        |
+| KT-62998 | Forbid assignment of a nullable to a not-null Java field as a selector of unsafe assignment |
+| KT-63209 | Report missing errors for error-level nullable arguments of warning-level Java types        |
+
+#### Java interoperability
+
+| Issue ID | Title                                                                                                      |
+|----------|------------------------------------------------------------------------------------------------------------|
+| KT-53061 | Forbid Java and Kotlin classes with the same FQ name in sources                                            |
+| KT-49882 | Classes inherited from Java collections have inconsistent behavior depending on order of supertypes        |
+| KT-66324 | K2: unspecified behavior in case of Java class inheritance from a Kotlin private class                     |
+| KT-66220 | Passing java vararg method to inline function leads to array of arrays in runtime instead of just an array |
+| KT-66204 | Allow to override internal members in K-J-K hierarchy                                                      |
+
+#### Properties
+
+| Issue ID | Title                                                                                                         |
+|----------|---------------------------------------------------------------------------------------------------------------|
+| KT-58589 | Deprecate missed MUST_BE_INITIALIZED when no primary constructor is presented or when class is local          |
+| KT-64295 | Forbid recursive resolve in case of potential invoke calls on properties                                      |
+| KT-57290 | Deprecate smart cast on base class property from invisible derived class if base class is from another module |
+| KT-62661 | K2: Missed OPT_IN_USAGE_ERROR for data class properties                                                       |
+
+#### Control flow
+
+| Issue ID | Title                                                                                      |
+|----------|--------------------------------------------------------------------------------------------|
+| KT-56408 | Inconsistent rules of CFA in class initialization block between K1 and K2                  |
+| KT-57871 | K1/K2 inconsistency on if-conditional without else-branch in parenthesis                   |
+| KT-42995 | False negative "VAL_REASSIGNMENT" in try/catch block with initialization in scope function |
+| KT-65724 | Propagate data flow information from try block to catch and finally blocks                 |
+
+#### Enum classes
+
+| Issue ID | Title                                                                                        |
+|----------|----------------------------------------------------------------------------------------------|
+| KT-57608 | Prohibit access to the companion object of enum class during initialization of enum entry    |
+| KT-34372 | Report missed error for virtual inline method in enum classes                                |
+| KT-52802 | Report ambiguity resolving between property/field and enum entry                             |
+| KT-47310 | Change qualifier resolution behavior when companion property is preferred against enum entry |
+
+#### Functional (SAM) interfaces
+
+| Issue ID | Title                                                                                                           |
+|----------|-----------------------------------------------------------------------------------------------------------------|
+| KT-52628 | Deprecate SAM constructor usages which require OptIn without annotation                                         |
+| KT-57014 | Prohibit returning values with incorrect nullability from lambda for SAM constructor of JDK function interfaces |
+| KT-64342 | SAM conversion of parameter types of callable references leads to CCE                                           |
+
+#### Companion object
+
+| Issue ID | Title                                                                    |
+|----------|--------------------------------------------------------------------------|
+| KT-54316 | Out-of-call reference to companion object's member has invalid signature |
+| KT-47313 | Change (V)::foo reference resolution when V has a companion              |
+
 #### Miscellaneous
 
 | Issue ID | Title                                                                                                      |
@@ -975,7 +990,7 @@ for further reading.
 | KT-55111 | OptIn: forbid constructor calls with default arguments under marker                                        |
 | KT-61182 | Unit conversion is accidentally allowed to be used for expressions on variables + invoke resolution        |
 | KT-55199 | Forbid promoting callable references with adaptations to KFunction                                         |
-| KT-65776 | [LC] K2 breaks \`false && ...\` and \`false \|\| ...\`                                                     |                                                      |
+| KT-65776 | [LC] K2 breaks \`false && ...\` and \`false \|\| ...\`                                                     |
 | KT-65682 | [LC] Deprecate \`header\`/\`impl\` keywords                                                                |
 
 ## Compatibility with Kotlin releases
