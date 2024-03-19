@@ -822,22 +822,7 @@ For more information, see the [corresponding issue in YouTrack](https://youtrack
 These subject areas list changes that are unlikely to affect your code but provide links to the relevant YouTrack issues
 for further reading.
 
-Subject areas:
-* [Type inference](#type-inference)
-* [Generics](#generics)
-* [Resolution](#resolution)
-* [Visibility](#visibility)
-* [Annotations](#annotations)
-* [Null safety](#null-safety)
-* [Java interoperability](#java-interoperability)
-* [Properties](#properties)
-* [Control flow](#control-flow)
-* [Enum classes](#enum-classes)
-* [Functional (SAM) interfaces](#functional-sam-interfaces)
-* [Companion object](#companion-object)
-* [Miscellaneous](#miscellaneous)
-
-#### Type inference
+#### Type inference {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                      |
 |----------|------------------------------------------------------------------------------------------------------------|
@@ -858,7 +843,7 @@ Subject areas:
 | KT-65750 | Increment and plus operators that change return type must affect smart casts                               |
 | KT-65349 | [LC] K2: specifying variable types explicitly breaks bound smart casts in some cases that worked in K1     |
 
-#### Generics
+#### Generics {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                                                                 |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -875,7 +860,7 @@ Subject areas:
 | KT-64966 | Forbid generic delegating constructor calls with wrong type for generic parameter                                                                     |
 | KT-65712 | Report missing upper bound violation when upper bound is captured type                                                                                |
 
-#### Resolution
+#### Resolution {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                                         |
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -890,7 +875,7 @@ Subject areas:
 | KT-64431 | K2: forbid using typealiases as qualifier in imports                                                                          |
 | KT-56520 | K1/K2: incorrect work of resolve tower for type references with ambiguity at lower level                                      |
 
-#### Visibility
+#### Visibility {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                                          |
 |----------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -904,7 +889,7 @@ Subject areas:
 | KT-65004 | K1: Setter of var, which overrides protected val, is generates as public                                                       |
 | KT-64972 | Forbid overriding by private members in link-time for Kotlin/Native                                                            |
 
-#### Annotations
+#### Annotations {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                  |
 |----------|--------------------------------------------------------------------------------------------------------|
@@ -918,7 +903,7 @@ Subject areas:
 | KT-63389 | K2: \`WRONG_ANNOTATION_TARGET\` is reported on incompatible annotations of a type wrapped into \`()?\` |
 | KT-63388 | K2: \`WRONG_ANNOTATION_TARGET\` is reported on catch parameter type's annotations                      |
 
-#### Null safety
+#### Null safety {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                       |
 |----------|---------------------------------------------------------------------------------------------|
@@ -928,7 +913,7 @@ Subject areas:
 | KT-62998 | Forbid assignment of a nullable to a not-null Java field as a selector of unsafe assignment |
 | KT-63209 | Report missing errors for error-level nullable arguments of warning-level Java types        |
 
-#### Java interoperability
+#### Java interoperability {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                      |
 |----------|------------------------------------------------------------------------------------------------------------|
@@ -938,7 +923,7 @@ Subject areas:
 | KT-66220 | Passing java vararg method to inline function leads to array of arrays in runtime instead of just an array |
 | KT-66204 | Allow to override internal members in K-J-K hierarchy                                                      |
 
-#### Properties
+#### Properties {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                         |
 |----------|---------------------------------------------------------------------------------------------------------------|
@@ -947,7 +932,7 @@ Subject areas:
 | KT-57290 | Deprecate smart cast on base class property from invisible derived class if base class is from another module |
 | KT-62661 | K2: Missed OPT_IN_USAGE_ERROR for data class properties                                                       |
 
-#### Control flow
+#### Control flow {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                      |
 |----------|--------------------------------------------------------------------------------------------|
@@ -956,7 +941,7 @@ Subject areas:
 | KT-42995 | False negative "VAL_REASSIGNMENT" in try/catch block with initialization in scope function |
 | KT-65724 | Propagate data flow information from try block to catch and finally blocks                 |
 
-#### Enum classes
+#### Enum classes {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                        |
 |----------|----------------------------------------------------------------------------------------------|
@@ -965,7 +950,7 @@ Subject areas:
 | KT-52802 | Report ambiguity resolving between property/field and enum entry                             |
 | KT-47310 | Change qualifier resolution behavior when companion property is preferred against enum entry |
 
-#### Functional (SAM) interfaces
+#### Functional (SAM) interfaces {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                           |
 |----------|-----------------------------------------------------------------------------------------------------------------|
@@ -973,14 +958,14 @@ Subject areas:
 | KT-57014 | Prohibit returning values with incorrect nullability from lambda for SAM constructor of JDK function interfaces |
 | KT-64342 | SAM conversion of parameter types of callable references leads to CCE                                           |
 
-#### Companion object
+#### Companion object {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                    |
 |----------|--------------------------------------------------------------------------|
 | KT-54316 | Out-of-call reference to companion object's member has invalid signature |
 | KT-47313 | Change (V)::foo reference resolution when V has a companion              |
 
-#### Miscellaneous
+#### Miscellaneous {initial-collapse-state="collapsed"}
 
 | Issue ID | Title                                                                                                      |
 |----------|------------------------------------------------------------------------------------------------------------|
