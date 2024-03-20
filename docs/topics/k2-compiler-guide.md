@@ -39,6 +39,10 @@ This guide:
 * highlights changes you might encounter during migration and how to adapt your code accordingly.
 * describes how you can roll back to the previous version.
 
+> For more information on the new features provided in Kotlin 2.0.0 as well as the new K2 compiler, see [What's new in Kotlin %kotlinEapVersion%](whatsnew-eap.md).
+> 
+{type="note"}
+
 ## Language feature improvements
 
 The Kotlin K2 compiler provides language feature improvements in [smart casts](#smart-casts) and [Kotlin Multiplatform](#kotlin-multiplatform).
@@ -420,7 +424,7 @@ In this example, the expected class `Identity` has no default constructor, so it
 Previously, only an IDE error was reported, but the code still compiled successfully on the JVM. However, now the compiler
 correctly reports an error:
 
-```kotlin
+```none
 Expected class 'expect class Identity : Any' does not have default constructor
 ```
 
@@ -648,21 +652,20 @@ And there was a Kotlin class `Derived` that inherits from the `Base` class:
 
 ```kotlin
 class Derived : Base() {
-    val a = "aa"
+  val a = "aa"
 
-    // Declare custom get() function
-    val b get() = "bb"
-        }
+  // Declare custom get() function
+  val b get() = "bb"
+}
 
-    fun main() {
-        // Resolves Derived.a
-        println(a)
-        // aa
+fun main() {
+  // Resolves Derived.a
+  println(a)
+  // aa
 
-        // Resolves Base.b
-        println(b)
-        // b
-    }
+  // Resolves Base.b
+  println(b)
+  // b
 }
 ```
 
@@ -672,10 +675,10 @@ the `Base` Java class.
 In Kotlin 2.0.0, the resolution behavior in the example is made consistent so that the Kotlin property supersedes the 
 Java field of the same name. `b` now resolves to: `Derived.b`.
 
-> Prior to Kotlin 2.0.0, if you used IntelliJ IDEA to go to the declaration or usage of `a`, the
-> IntelliJ IDEA incorrectly navigated to the Java field when it should have navigated to the Kotlin > property. From Kotlin
-> 2.0.0, IntelliJ IDEA correctly navigates to the same location as the
-> compiler.
+> Prior to Kotlin 2.0.0, if you used IntelliJ IDEA to go to the declaration or usage of `a`, the IntelliJ IDEA incorrectly
+> navigated to the Java field when it should have navigated to the Kotlin property. 
+> 
+> From Kotlin 2.0.0, IntelliJ IDEA correctly navigates to the same location as the compiler.
 >
 {type ="note"}
 
@@ -698,7 +701,7 @@ For example:
 ```kotlin
 open class Base {
     val a = "aa"
-        }
+}
 ```
 
 </td>
@@ -717,11 +720,10 @@ public class Derived extends Base {
 In the following code:
 
 ```kotlin
-    fun main() {
-        // Resolves Derived.a
-        println(a)
-        // a
-    }
+fun main() {
+    // Resolves Derived.a
+    println(a)
+    // a
 }
 ```
 
@@ -817,7 +819,7 @@ null always false" warning.
 
 For more information, see the [corresponding issue in YouTrack](https://youtrack.jetbrains.com/issue/KT-54521).
 
-### Changes per subject area
+### Per subject area
 
 These subject areas list changes that are unlikely to affect your code but provide links to the relevant YouTrack issues
 for further reading.
@@ -1002,7 +1004,7 @@ Currently, the Kotlin K2 compiler supports the following Kotlin compiler plugins
 * [`no-arg`](no-arg-plugin.md)
 * [Parcelize](https://plugins.gradle.org/plugin/org.jetbrains.kotlin.plugin.parcelize)
 * [SAM with receiver](sam-with-receiver-plugin.md)
-* [serialization](serialization.md)
+* [Serialization](serialization.md)
 
 In addition, the Kotlin K2 compiler supports:
 * the [Jetpack Compose](https://developer.android.com/jetpack/compose) 1.5.0 compiler plugin and later versions.

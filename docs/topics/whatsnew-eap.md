@@ -432,7 +432,7 @@ In this example, the expected class `Identity` has no default constructor, so it
 Previously, only an IDE error was reported, but the code still compiled successfully on the JVM. However, now the compiler
 correctly reports an error:
 
-```kotlin
+```none
 Expected class 'expect class Identity : Any' does not have default constructor
 ```
 
@@ -527,7 +527,7 @@ Currently, the Kotlin K2 compiler supports the following Kotlin compiler plugins
 * [`no-arg`](no-arg-plugin.md)
 * [Parcelize](https://plugins.gradle.org/plugin/org.jetbrains.kotlin.plugin.parcelize)
 * [SAM with receiver](sam-with-receiver-plugin.md)
-* [serialization](serialization.md)
+* [Serialization](serialization.md)
 
 In addition, the Kotlin K2 compiler supports:
 * the [Jetpack Compose](https://developer.android.com/jetpack/compose) 1.5.0 compiler plugin and later versions.
