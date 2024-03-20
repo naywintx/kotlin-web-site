@@ -534,8 +534,8 @@ To use the previous compiler in Kotlin 2.0.0, either:
 ## Changes
 
 As a result of the new frontend, the Kotlin compiler has undergone some changes. We first highlight the most noticeable 
-changes affecting your code, explaining what has changed and the best practices going forward. For those changes that may
-go unnoticed, we have organized them into subject areas for further reading, should you want to learn more.
+changes affecting your code, explaining what has changed and the best practices going forward. We have organized all changes
+into subject areas for further reading, should you want to learn more.
 
 ### Highlighted changes
 
@@ -822,7 +822,7 @@ For more information, see the [corresponding issue in YouTrack](https://youtrack
 ### Per subject area
 
 These subject areas list changes that are unlikely to affect your code but provide links to the relevant YouTrack issues
-for further reading.
+for further reading. Changes that are listed with an asterisk (*) are explained in the [highlighted changes](#highlighted-changes).
 
 #### Type inference {initial-collapse-state="collapsed"}
 
@@ -847,35 +847,37 @@ for further reading.
 
 #### Generics {initial-collapse-state="collapsed"}
 
-| Issue ID                                                  | Title                                                                                                                                                 |
-|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [KT-57600](https://youtrack.jetbrains.com/issue/KT-57600) | Forbid overriding of Java method with raw-typed parameter with generic typed parameter                                                                |
-| [KT-54663](https://youtrack.jetbrains.com/issue/KT-54663) | Forbid passing possibly nullable type parameter to \`in\` projected DNN parameter                                                                     |
-| [KT-54066](https://youtrack.jetbrains.com/issue/KT-54066) | Deprecate upper bound violation in typealias constructors                                                                                             |
-| [KT-49404](https://youtrack.jetbrains.com/issue/KT-49404) | Fix type unsoundness for contravariant captured type based on Java class                                                                              |
-| [KT-61718](https://youtrack.jetbrains.com/issue/KT-61718) | Forbid unsound code with self upper bounds and captured types                                                                                         |
-| [KT-61749](https://youtrack.jetbrains.com/issue/KT-61749) | Forbid unsound bound violation in generic inner class of generic outer class                                                                          |
-| [KT-62923](https://youtrack.jetbrains.com/issue/KT-62923) | K2: Introduce PROJECTION_IN_IMMEDIATE_ARGUMENT_TO_SUPERTYPE for projections of outer super types of inner class                                       |
-| [KT-63243](https://youtrack.jetbrains.com/issue/KT-63243) | Report MANY_IMPL_MEMBER_NOT_IMPLEMENTED when inheriting from collection of primitives with an extra specialized implementation from another supertype |
-| [KT-60305](https://youtrack.jetbrains.com/issue/KT-60305) | K2: Prohibit constructor call and inheritance on type alias that has variance modifiers in expanded type                                              |
-| [KT-64965](https://youtrack.jetbrains.com/issue/KT-64965) | Fix type hole caused by improper handling of captured types with self-upper bounds                                                                    |
-| [KT-64966](https://youtrack.jetbrains.com/issue/KT-64966) | Forbid generic delegating constructor calls with wrong type for generic parameter                                                                     |
-| [KT-65712](https://youtrack.jetbrains.com/issue/KT-65712) | Report missing upper bound violation when upper bound is captured type                                                                                |
+| Issue ID                                                   | Title                                                                                                                                                 |
+|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [KT-54309](https://youtrack.jetbrains.com/issue/KT-54309)* | [Deprecate use of a synthetic setter on a projected receiver](#deprecate-use-of-a-synthetic-setter-on-a-projected-receiver)                           |
+| [KT-57600](https://youtrack.jetbrains.com/issue/KT-57600)  | Forbid overriding of Java method with raw-typed parameter with generic typed parameter                                                                |
+| [KT-54663](https://youtrack.jetbrains.com/issue/KT-54663)  | Forbid passing possibly nullable type parameter to \`in\` projected DNN parameter                                                                     |
+| [KT-54066](https://youtrack.jetbrains.com/issue/KT-54066)  | Deprecate upper bound violation in typealias constructors                                                                                             |
+| [KT-49404](https://youtrack.jetbrains.com/issue/KT-49404)  | Fix type unsoundness for contravariant captured type based on Java class                                                                              |
+| [KT-61718](https://youtrack.jetbrains.com/issue/KT-61718)  | Forbid unsound code with self upper bounds and captured types                                                                                         |
+| [KT-61749](https://youtrack.jetbrains.com/issue/KT-61749)  | Forbid unsound bound violation in generic inner class of generic outer class                                                                          |
+| [KT-62923](https://youtrack.jetbrains.com/issue/KT-62923)  | K2: Introduce PROJECTION_IN_IMMEDIATE_ARGUMENT_TO_SUPERTYPE for projections of outer super types of inner class                                       |
+| [KT-63243](https://youtrack.jetbrains.com/issue/KT-63243)  | Report MANY_IMPL_MEMBER_NOT_IMPLEMENTED when inheriting from collection of primitives with an extra specialized implementation from another supertype |
+| [KT-60305](https://youtrack.jetbrains.com/issue/KT-60305)  | K2: Prohibit constructor call and inheritance on type alias that has variance modifiers in expanded type                                              |
+| [KT-64965](https://youtrack.jetbrains.com/issue/KT-64965)  | Fix type hole caused by improper handling of captured types with self-upper bounds                                                                    |
+| [KT-64966](https://youtrack.jetbrains.com/issue/KT-64966)  | Forbid generic delegating constructor calls with wrong type for generic parameter                                                                     |
+| [KT-65712](https://youtrack.jetbrains.com/issue/KT-65712)  | Report missing upper bound violation when upper bound is captured type                                                                                |
 
 #### Resolution {initial-collapse-state="collapsed"}
 
-| Issue ID                                                  | Title                                                                                                                         |
-|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [KT-58260](https://youtrack.jetbrains.com/issue/KT-58260) | Make invoke convention works consistently with expected desugaring                                                            |
-| [KT-62866](https://youtrack.jetbrains.com/issue/KT-62866) | K2: Change qualifier resolution behavior when companion object is preferred against static scope                              |
-| [KT-57750](https://youtrack.jetbrains.com/issue/KT-57750) | Report ambiguity error when resolving types and having the same-named classes star imported                                   |
-| [KT-63558](https://youtrack.jetbrains.com/issue/KT-63558) | K2: migrate resolution around COMPATIBILITY_WARNING                                                                           |
-| [KT-51194](https://youtrack.jetbrains.com/issue/KT-51194) | False negative CONFLICTING_INHERITED_MEMBERS when dependency class contained in two different versions of the same dependency |
-| [KT-37592](https://youtrack.jetbrains.com/issue/KT-37592) | Property invoke of a functional type with receiver is preferred over extension function invoke                                |
-| [KT-51666](https://youtrack.jetbrains.com/issue/KT-51666) | Qualified this: introduce/prioritize this qualified with type case                                                            |
-| [KT-54166](https://youtrack.jetbrains.com/issue/KT-54166) | Confirm unspecified behavior in case of FQ name conflicts in classpath                                                        |
-| [KT-64431](https://youtrack.jetbrains.com/issue/KT-64431) | K2: forbid using typealiases as qualifier in imports                                                                          |
-| [KT-56520](https://youtrack.jetbrains.com/issue/KT-56520) | K1/K2: incorrect work of resolve tower for type references with ambiguity at lower level                                      |
+| Issue ID                                                   | Title                                                                                                                                                                                        |
+|------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [KT-55017](https://youtrack.jetbrains.com/issue/KT-55017)* | [Choose Kotlin property from derived class during overload resolution with Java field from base class](#consistent-resolution-order-of-kotlin-properties-and-java-fields-with-the-same-name) |
+| [KT-58260](https://youtrack.jetbrains.com/issue/KT-58260)  | Make invoke convention works consistently with expected desugaring                                                                                                                           |
+| [KT-62866](https://youtrack.jetbrains.com/issue/KT-62866)  | K2: Change qualifier resolution behavior when companion object is preferred against static scope                                                                                             |
+| [KT-57750](https://youtrack.jetbrains.com/issue/KT-57750)  | Report ambiguity error when resolving types and having the same-named classes star imported                                                                                                  |
+| [KT-63558](https://youtrack.jetbrains.com/issue/KT-63558)  | K2: migrate resolution around COMPATIBILITY_WARNING                                                                                                                                          |
+| [KT-51194](https://youtrack.jetbrains.com/issue/KT-51194)  | False negative CONFLICTING_INHERITED_MEMBERS when dependency class contained in two different versions of the same dependency                                                                |
+| [KT-37592](https://youtrack.jetbrains.com/issue/KT-37592)  | Property invoke of a functional type with receiver is preferred over extension function invoke                                                                                               |
+| [KT-51666](https://youtrack.jetbrains.com/issue/KT-51666)  | Qualified this: introduce/prioritize this qualified with type case                                                                                                                           |
+| [KT-54166](https://youtrack.jetbrains.com/issue/KT-54166)  | Confirm unspecified behavior in case of FQ name conflicts in classpath                                                                                                                       |
+| [KT-64431](https://youtrack.jetbrains.com/issue/KT-64431)  | K2: forbid using typealiases as qualifier in imports                                                                                                                                         |
+| [KT-56520](https://youtrack.jetbrains.com/issue/KT-56520)  | K1/K2: incorrect work of resolve tower for type references with ambiguity at lower level                                                                                                     |
 
 #### Visibility {initial-collapse-state="collapsed"}
 
@@ -907,13 +909,14 @@ for further reading.
 
 #### Null safety {initial-collapse-state="collapsed"}
 
-| Issue ID                                                  | Title                                                                                       |
-|-----------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [KT-41034](https://youtrack.jetbrains.com/issue/KT-41034) | K2: Change evaluation semantics for combination of safe calls and convention operators      |
-| [KT-50850](https://youtrack.jetbrains.com/issue/KT-50850) | Order of supertypes defines nullability parameters of inherited functions                   |
-| [KT-53982](https://youtrack.jetbrains.com/issue/KT-53982) | Keep nullability when approximating local types in public signatures                        |
-| [KT-62998](https://youtrack.jetbrains.com/issue/KT-62998) | Forbid assignment of a nullable to a not-null Java field as a selector of unsafe assignment |
-| [KT-63209](https://youtrack.jetbrains.com/issue/KT-63209) | Report missing errors for error-level nullable arguments of warning-level Java types        |
+| Issue ID                                                   | Title                                                                                                                          |
+|------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| [KT-54521](https://youtrack.jetbrains.com/issue/KT-54521)* | [Deprecate unsafe usages of array types annotated as Nullable in Java](#improved-nullability-safety-for-java-primitive-arrays) |
+| [KT-41034](https://youtrack.jetbrains.com/issue/KT-41034)  | K2: Change evaluation semantics for combination of safe calls and convention operators                                         |
+| [KT-50850](https://youtrack.jetbrains.com/issue/KT-50850)  | Order of supertypes defines nullability parameters of inherited functions                                                      |
+| [KT-53982](https://youtrack.jetbrains.com/issue/KT-53982)  | Keep nullability when approximating local types in public signatures                                                           |
+| [KT-62998](https://youtrack.jetbrains.com/issue/KT-62998)  | Forbid assignment of a nullable to a not-null Java field as a selector of unsafe assignment                                    |
+| [KT-63209](https://youtrack.jetbrains.com/issue/KT-63209)  | Report missing errors for error-level nullable arguments of warning-level Java types                                           |
 
 #### Java interoperability {initial-collapse-state="collapsed"}
 
@@ -927,12 +930,13 @@ for further reading.
 
 #### Properties {initial-collapse-state="collapsed"}
 
-| Issue ID                                                  | Title                                                                                                         |
-|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [KT-58589](https://youtrack.jetbrains.com/issue/KT-58589) | Deprecate missed MUST_BE_INITIALIZED when no primary constructor is presented or when class is local          |
-| [KT-64295](https://youtrack.jetbrains.com/issue/KT-64295) | Forbid recursive resolve in case of potential invoke calls on properties                                      |
-| [KT-57290](https://youtrack.jetbrains.com/issue/KT-57290) | Deprecate smart cast on base class property from invisible derived class if base class is from another module |
-| [KT-62661](https://youtrack.jetbrains.com/issue/KT-62661) | K2: Missed OPT_IN_USAGE_ERROR for data class properties                                                       |
+| Issue ID                                                   | Title                                                                                                                                         |
+|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| [KT-57555](https://youtrack.jetbrains.com/issue/KT-57555)* | [[LC] Forbid deferred initialization of open properties with backing field](#immediate-initialization-of-open-properties-with-backing-fields) |
+| [KT-58589](https://youtrack.jetbrains.com/issue/KT-58589)  | Deprecate missed MUST_BE_INITIALIZED when no primary constructor is presented or when class is local                                          |
+| [KT-64295](https://youtrack.jetbrains.com/issue/KT-64295)  | Forbid recursive resolve in case of potential invoke calls on properties                                                                      |
+| [KT-57290](https://youtrack.jetbrains.com/issue/KT-57290)  | Deprecate smart cast on base class property from invisible derived class if base class is from another module                                 |
+| [KT-62661](https://youtrack.jetbrains.com/issue/KT-62661)  | K2: Missed OPT_IN_USAGE_ERROR for data class properties                                                                                       |
 
 #### Control flow {initial-collapse-state="collapsed"}
 
