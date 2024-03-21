@@ -513,7 +513,11 @@ From Kotlin 2.0.0, the Kotlin K2 compiler is enabled by default.
 To update to the new Kotlin version, change the Kotlin version to 2.0.0 in your [Gradle](gradle-configure-project.md#apply-the-plugin)
 and [Maven](maven.md#configure-and-enable-the-plugin) build scripts.
 
-## How to enable IDE support
+## Try the Kotlin K2 compiler in Kotlin Playground
+
+Kotlin Playground supports the %kotlinEapVersion% release. [Check it out!](https://pl.kotl.in/czuoQprce)
+
+## Support in IntelliJ IDEA
 
 IntelliJ IDEA can use the new K2 compiler to analyze your code with its K2 Kotlin mode from [IntelliJ IDEA 2024.1 EAP 1](https://blog.jetbrains.com/idea/2024/01/intellij-idea-2024-1/#intellij-idea%\E2%80%99s-k2-kotlin-mode-now-in-alpha).
 
