@@ -25,7 +25,7 @@ data structure enables the K2 compiler to provide the following benefits:
 * **Enhances IDE performance**
 
   If you enable K2 mode in IntelliJ IDEA, then IntelliJ IDEA will use the K2 compiler frontend to analyze your Kotlin code,
-  bringing stability and performance improvements. For more information, see [How to enable IDE support](#how-to-enable-ide-support).
+  bringing stability and performance improvements. For more information, see [Support in IntelliJ IDEA](#support-in-intellij-idea).
 
   > The K2 Kotlin mode is in Alpha. The performance and stability of code highlighting and code completion have been improved,
   > but not all IDE features are supported yet.
@@ -512,6 +512,29 @@ From Kotlin 2.0.0, the Kotlin K2 compiler is enabled by default.
 
 To update to the new Kotlin version, change the Kotlin version to 2.0.0 in your [Gradle](gradle-configure-project.md#apply-the-plugin)
 and [Maven](maven.md#configure-and-enable-the-plugin) build scripts.
+
+### Use Kotlin build reports with Gradle
+
+> Kotlin build reports are [Experimental](https://kotlinlang.org/docs/components-stability.html).
+> Opt-in is required (see details below). They may be changed at any time.
+>
+{type="warning"}
+
+Kotlin [build reports](gradle-compilation-and-caches.md#build-reports) provide information about the time spent in different
+compilation phases for Kotlin compiler tasks, as well as which compiler and Kotlin version were used, and whether the compilation
+was incremental. They are a useful tool for assessing your build performance. Build reports are more insightful than 
+[Gradle build scans](https://scans.gradle.com/), which only allow you to investigate a single Gradle task, because they give
+you an overview of the performance of all Gradle tasks.
+
+#### How to enable build reports
+
+To enable build reports, declare where to save the build report output in your `gradle.properties` file:
+
+```none
+kotlin.build.report.output=file
+```
+
+For more information on what is possible with build reports, see [Build reports](gradle-compilation-and-caches.md#build-reports).
 
 ## Try the Kotlin K2 compiler in Kotlin Playground
 
