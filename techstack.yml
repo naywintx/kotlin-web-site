@@ -1,0 +1,1008 @@
+repo_name: naywintx/kotlin-web-site
+report_id: 88ef929d81ceeee5e1f19781f9565312
+version: 0.1
+repo_type: Public
+timestamp: '2024-05-21T02:36:38+00:00'
+requested_by: AlejandraPedroza
+provider: github
+branch: master
+detected_tools_count: 75
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: Kotlin
+  description: Statically typed Programming Language targeting JVM and JavaScript
+  website_url: https://kotlinlang.org/
+  open_source: true
+  hosted_saas: true
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/3750/pCfEzr6L.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/.teamcity/BuildParams.kt
+  detection_source: ".teamcity/BuildParams.kt"
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-08-03 15:05:21.000000000 Z
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: Apache FreeMarker
+  description: A free Java-based template engine
+  website_url: http://freemarker.incubator.apache.org/index.html
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Java Tools
+  image_url: https://img.stackshare.io/service/4456/ymCgaIO0_400x400.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: Autoprefixer
+  description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
+  website_url: https://github.com/postcss/autoprefixer
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2021-08-23 13:18:09.000000000 Z
+- name: Next.js
+  description: A small framework for server-rendered universal JavaScript apps
+  website_url: https://nextjs.org/
+  version: 13.4.15
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/5936/nextjs.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: satamas
+  last_updated_on: 2016-10-21 14:17:04.000000000 Z
+- name: Normalize.css
+  description: A modern alternative to CSS resets
+  website_url: https://necolas.github.io/normalize.css/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/6361/default_8c8faac34fdcb5b696503f5166b5232ad0adcf6e.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-04-11 13:11:06.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: Sass
+  description: Syntactically Awesome Style Sheets
+  website_url: http://sass-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: satamas
+  last_updated_on: 2016-10-21 14:17:04.000000000 Z
+- name: css-loader
+  description: Helps webpack to collect CSS from all the css files
+  website_url: https://github.com/webpack-contrib/css-loader
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/8074/default_d2b16fd6997fb2e164de645a34f9b8d5a880d999.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-11-10 10:11:45.000000000 Z
+- name: jQuery
+  description: The Write Less, Do More, JavaScript Library.
+  website_url: http://jquery.com/
+  version: 3.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2021-01-25 17:44:19.000000000 Z
+- name: Babel
+  description: Use next generation JavaScript, today.
+  website_url: http://babeljs.io/
+  version: 7.21.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JavaScript Compilers
+  image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: ".babelrc"
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-04-18 13:23:14.000000000 Z
+- name: CodeMirror
+  description: A versatile text editor implemented in JavaScript for the browser
+  website_url: http://codemirror.net/
+  version: 5.61.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Text Editor
+  image_url: https://img.stackshare.io/service/2490/E_fCaAi6.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-12-11 13:04:40.000000000 Z
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: satamas
+  last_updated_on: 2016-10-21 14:17:04.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/.github/workflows/autoupdate.yml
+  detection_source: ".github/workflows/autoupdate.yml"
+  last_updated_by: Nikolay Pachkov
+  last_updated_on: 2022-10-12 14:57:08.000000000 Z
+- name: Prettier
+  description: Prettier is an opinionated code formatter.
+  website_url: https://prettier.io/
+  version: 2.6.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: kb.chernenko
+  last_updated_on: 2019-11-05 15:50:07.000000000 Z
+- name: Webpack
+  description: A bundler for javascript and friends
+  website_url: http://webpack.js.org
+  version: 5.76.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/1682/IMG_4636.PNG
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Nikolay Pachkov
+  last_updated_on: 2023-08-27 13:26:41.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: yarn.lock
+  last_updated_by: kisenka
+  last_updated_on: 2018-02-02 12:43:43.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/scripts/latest-news/package.json
+  detection_source: scripts/latest-news/package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2023-12-07 21:01:14.000000000 Z
+- name: rollup
+  description: The next-generation JavaScript module bundler
+  website_url: http://rollupjs.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/4423/zE8RTn9E_400x400.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2022-12-09 14:01:39.000000000 Z
+- name: Algolia
+  description: Developer-friendly API and complete set of tools for building search
+  website_url: https://www.algolia.com/?utm_source=stackshare&utm_medium=referral
+  version: 4.10.2
+  open_source: false
+  hosted_saas: true
+  category: Application Utilities
+  sub_category: Search as a Service
+  image_url: https://img.stackshare.io/service/589/default_452afb716f8f4b904f267638e5c6b9172f9fa06d.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2021-06-29 13:16:07.000000000 Z
+- name: Formik
+  description: Build forms in React
+  website_url: https://jaredpalmer.com/formik/
+  version: 2.2.9
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Web Forms
+  image_url: https://img.stackshare.io/service/8846/preview.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2021-10-21 09:20:43.000000000 Z
+- name: Lottie
+  description: Easily add high-quality animation to any native app (by Airbnb)
+  website_url: http://airbnb.design/lottie/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Mobile Prototyping & Interaction Design Tools
+  image_url: https://img.stackshare.io/service/6445/lottie.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: XSLT
+  description: The official Twitter account for the sum of all knowledge, Wikipedia.
+    Overseen by @jeffelder.
+  website_url: https://en.wikipedia.org/wiki/XSLT
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/4253/nZXfdUQq_normal.jpg
+  detection_source_url: https://github.com/naywintx/kotlin-web-site
+  detection_source: Repo Metadata
+- name: svgo
+  website_url: https://github.com/svg/svgo
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8443/2473585.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2021-11-01 11:26:55.000000000 Z
+- name: "@babel/core"
+  description: Babel compiler core
+  package_url: https://www.npmjs.com/@babel/core
+  version: 7.21.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15810/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-08-14 20:16:35.000000000 Z
+- name: "@babel/register"
+  description: Babel require hook
+  package_url: https://www.npmjs.com/@babel/register
+  version: 7.15.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16014/default_7a465bc85b23fd837cbc038fd1d504632c41a884.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-08-14 20:16:35.000000000 Z
+- name: "@types/react"
+  description: TypeScript definitions for React
+  package_url: https://www.npmjs.com/@types/react
+  version: 17.0.43
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: algoliasearch
+  description: A fully-featured and blazing-fast JavaScript API client to interact
+    with Algolia API
+  package_url: https://www.npmjs.com/algoliasearch
+  version: 4.10.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17074/default_5b9eca95ab3651165eb280ed5e0bc9a9382ad24d.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2021-06-29 13:16:07.000000000 Z
+- name: babel-loader
+  description: Babel module loader for webpack
+  package_url: https://www.npmjs.com/babel-loader
+  version: 8.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15800/default_4acafe585186b4157fa23322ae7ca89e24b5cdef.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-08-14 20:16:35.000000000 Z
+- name: classnames
+  description: A simple utility for conditionally joining classNames together
+  package_url: https://www.npmjs.com/classnames
+  version: 2.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15942/default_4040fefea2f98006727f63d042275b96a275ab2d.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-04-13 13:23:40.000000000 Z
+- name: core-js
+  description: Standard library
+  package_url: https://www.npmjs.com/core-js
+  version: 3.19.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15869/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-08-14 20:16:35.000000000 Z
+- name: debounce
+  description: Creates and returns a new debounced version of the passed function
+    that will postpone its execution until after wait milliseconds have elapsed since
+    the last time it was invoked
+  package_url: https://www.npmjs.com/debounce
+  version: 1.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17140/default_eb6674f470fe213f950fd09d858ebb0f6b6e3dda.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-12-11 13:04:40.000000000 Z
+- name: eslint-config-next
+  description: ESLint configuration used by Next.js
+  package_url: https://www.npmjs.com/eslint-config-next
+  version: 12.1.6
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Nikolay Pachkov
+  last_updated_on: 2023-10-23 21:21:30.000000000 Z
+- name: eslint-config-prettier
+  description: Turns off all rules that are unnecessary or might conflict with Prettier
+  package_url: https://www.npmjs.com/eslint-config-prettier
+  version: 8.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: event-emitter
+  description: Environment agnostic event emitter
+  package_url: https://www.npmjs.com/event-emitter
+  version: 0.3.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17850/default_369b3bf3ef062123a581e4817f09cb0004de7ff6.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: satamas
+  last_updated_on: 2016-10-21 14:17:04.000000000 Z
+- name: extend
+  description: Port of jQuery.extend for node.js and the browser
+  package_url: https://www.npmjs.com/extend
+  version: 3.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16161/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Prendota
+  last_updated_on: 2019-03-20 07:23:26.000000000 Z
+- name: fast-xml-parser
+  description: Validate XML or Parse XML to JS/JSON very fast without C/C++ based
+    libraries
+  package_url: https://www.npmjs.com/fast-xml-parser
+  version: 4.3.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18585/default_8f927dfbacb5114543043eda4a41364f4f47ff2c.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/scripts/latest-news/package-lock.json
+  detection_source: scripts/latest-news/package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2023-12-07 21:01:14.000000000 Z
+- name: file-loader
+  description: A file loader module for webpack
+  package_url: https://www.npmjs.com/file-loader
+  version: 6.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15834/default_4479dbac220be99e50e724b2df6cf415241d71fd.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-08-14 20:16:35.000000000 Z
+- name: mini-css-extract-plugin
+  description: Extracts CSS into separate files
+  package_url: https://www.npmjs.com/mini-css-extract-plugin
+  version: 1.6.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15992/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: nanoid
+  description: A tiny
+  package_url: https://www.npmjs.com/nanoid
+  version: 3.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17208/default_183829c5079b84333a720d8590a328efc043ba0e.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-04-25 21:01:50.000000000 Z
+- name: node-sass
+  description: Wrapper around libsass
+  package_url: https://www.npmjs.com/node-sass
+  version: 7.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15827/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-08-14 20:16:35.000000000 Z
+- name: postcss-custom-media
+  description: Use Custom Media Queries in CSS
+  package_url: https://www.npmjs.com/postcss-custom-media
+  version: 10.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17539/default_8d32936cb624bf7f51657c1540463db0a3c4106e.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-11-10 10:11:45.000000000 Z
+- name: postcss-custom-properties
+  description: Use Custom Properties Queries in CSS
+  package_url: https://www.npmjs.com/postcss-custom-properties
+  version: 11.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17216/default_37d9ccc57ae4d32e7ff46614e4f8bb2c4ddc7964.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-11-10 10:11:45.000000000 Z
+- name: postcss-import
+  description: PostCSS plugin to import CSS files
+  package_url: https://www.npmjs.com/postcss-import
+  version: 15.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16086/default_d4e765f8a43dcfd232c8b9ee9732058bc27c727a.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-11-10 10:11:45.000000000 Z
+- name: postcss-loader
+  description: PostCSS loader for webpack
+  package_url: https://www.npmjs.com/postcss-loader
+  version: 6.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15876/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-11-10 10:11:45.000000000 Z
+- name: postcss-nesting
+  description: Nest style rules inside each other
+  package_url: https://www.npmjs.com/postcss-nesting
+  version: 12.0.1
+  license: CC0-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18691/default_d0e31e7e33b4207236b4a3eb4b502cff85101c1d.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-11-10 10:11:45.000000000 Z
+- name: query-string
+  description: Parse and stringify URL query strings
+  package_url: https://www.npmjs.com/query-string
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16244/default_380ae3d73e22c7ca1f42b96479bcd0095dabc0d3.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2021-01-25 17:44:19.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: react-error-boundary
+  description: Simple reusable React error boundary component
+  package_url: https://www.npmjs.com/react-error-boundary
+  version: 4.0.11
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: resolve-url-loader
+  description: Webpack loader that resolves relative paths in url
+  package_url: https://www.npmjs.com/resolve-url-loader
+  version: 4.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16468/default_73c88a18b684e01cbdbf945631a40a44aff5a777.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: sass-loader
+  description: Sass loader for webpack
+  package_url: https://www.npmjs.com/sass-loader
+  version: 12.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15842/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Yuri Teplyakov
+  last_updated_on: 2023-08-14 20:16:35.000000000 Z
+- name: sha.js
+  description: Streamable SHA hashes in pure javascript
+  package_url: https://www.npmjs.com/sha.js
+  version: 2.4.11
+  license: MIT,BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17831/default_369b3bf3ef062123a581e4817f09cb0004de7ff6.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-04-18 13:02:38.000000000 Z
+- name: svgo
+  description: Nodejs-based tool for optimizing SVG vector graphics files
+  package_url: https://www.npmjs.com/svgo
+  version: 2.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16716/default_e3c0987b80983280e46e6e1723fcfcff50fa4824.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2021-11-01 11:26:55.000000000 Z
+- name: tslib
+  description: Runtime library for TypeScript helper functions
+  package_url: https://www.npmjs.com/tslib
+  version: 2.2.0
+  license: 0BSD
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15853/default_97d4687bd07ff1bb963fd566c84e7cbf7c73bbee.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2020-10-12 08:59:00.000000000 Z
+- name: url-loader
+  description: A loader for webpack which transforms files into base64 URIs
+  package_url: https://www.npmjs.com/url-loader
+  version: 4.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15858/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-04-19 10:10:36.000000000 Z
+- name: validator
+  description: String validation and sanitization
+  package_url: https://www.npmjs.com/validator
+  version: 13.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16255/default_fef27d1523ac1844fc00e83e47bddd8898ff8a89.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-11-03 19:53:30.000000000 Z
+- name: webpack-cli
+  description: CLI for webpack &amp; friends
+  package_url: https://www.npmjs.com/webpack-cli
+  version: 5.1.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15826/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Nikolay Pachkov
+  last_updated_on: 2023-08-27 13:26:41.000000000 Z
+- name: webpack-dev-server
+  description: Serves a webpack app. Updates the browser on changes
+  package_url: https://www.npmjs.com/webpack-dev-server
+  version: 4.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15821/default_64690bc3e49bcee57094e51a7a26c620c48dbd82.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: zoobestik
+  last_updated_on: 2024-01-24 12:34:37.000000000 Z
+- name: whatwg-fetch
+  description: A window.fetch polyfill
+  package_url: https://www.npmjs.com/whatwg-fetch
+  version: 2.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16094/default_63a34654baee757196ddff2457bd1c9a0dfb7287.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: kisenka
+  last_updated_on: 2017-02-13 12:12:24.000000000 Z
+- name: Pygments
+  description: Pygments is a syntax highlighting package written in Python
+  package_url: https://pypi.org/project/Pygments
+  version: 2.12.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19858/default_4d761b2257a1435539d6dc92346974d9f1d55c70.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-06-29 09:38:28.000000000 Z
+  vulnerabilities:
+  - name: Pygments vulnerable to ReDoS
+    cve_id: CVE-2022-40896
+    cve_url: https://github.com/advisories/GHSA-mrwq-x4v8-fh7p
+    detected_date: Jul 21
+    severity: moderate
+    first_patched: 2.15.0
+- name: PyYAML
+  description: YAML parser and emitter for Python
+  package_url: https://pypi.org/project/PyYAML
+  version: 5.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19829/default_74a61b43bdb9fc0cba2978316b9976f43545029b.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: zoobestik
+  last_updated_on: 2021-10-14 13:24:58.000000000 Z
+- name: beautifulsoup4
+  description: Screen-scraping library
+  package_url: https://pypi.org/project/beautifulsoup4
+  version: 4.11.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19838/default_85689b353a3a9409328e253ea28d859d29151e0c.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-06-29 09:38:28.000000000 Z
+- name: google-api-python-client
+  description: Google API Client Library for Python
+  package_url: https://pypi.org/project/google-api-python-client
+  version: 1.6.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19897/default_4343f8bba4f6051641ffca8b4fbe9b099402c84d.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-06-29 09:38:28.000000000 Z
+- name: python-frontmatter
+  description: Parse and manage posts with YAML
+  package_url: https://pypi.org/project/python-frontmatter
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-06-29 09:38:28.000000000 Z
+- name: ruamel.yaml
+  description: Ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation
+    of comments
+  package_url: https://pypi.org/project/ruamel.yaml
+  version: 0.17.21
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19918/default_c8be5290cb8d8a8b578535a2c6475d1057ff4ea4.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-06-29 09:38:28.000000000 Z
+- name: xmltodict
+  description: Makes working with XML feel like you are working with JSON
+  package_url: https://pypi.org/project/xmltodict
+  version: 0.13.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19902/default_1d0eb6da6bdd342bb15f73d8f1721516ebacd1dc.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-06-29 09:38:28.000000000 Z
+- name: org.jetbrains.kotlin:kotlin-script-runtime
+  description: Kotlin Script Runtime
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/.teamcity/pom.xml
+  detection_source: ".teamcity/pom.xml"
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-07-13 12:46:56.000000000 Z
+- name: org.jetbrains.kotlin:kotlin-stdlib-jdk8
+  description: Kotlin Standard Library JDK 8 extension
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/naywintx/kotlin-web-site/blob/master/.teamcity/pom.xml
+  detection_source: ".teamcity/pom.xml"
+  last_updated_by: nikpachoo
+  last_updated_on: 2022-07-13 12:46:56.000000000 Z
